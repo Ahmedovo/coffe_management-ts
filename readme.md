@@ -27,7 +27,7 @@ Complete TypeScript implementation of a café management system with browser-bas
 
 ## Class diagramme
 
-![Alt Text](image.png)
+![Alt Text](images/image.png)
 
 ## Installation
 
@@ -45,17 +45,4 @@ npm start
 #### http://localhost:3000
 
 ## Complete File Structure
-src/
-├── models/
-│   ├── Coffee.ts            # Base coffee class and implementations
-│   ├── Customization.ts     # Customization model
-│   ├── Order.ts             # Order composite model
-├── factories/
-│   ├── CoffeeFactory.ts     # Factory for coffee creation
-├── dao/
-│   ├── OrderDAO.ts          # Data access operations
-│   ├── Database.ts          # IndexedDB wrapper
-├── managers/
-│   ├── InventoryManager.ts  # Singleton inventory control
-├── index.ts                 # Main application logic
-index.html               # UI template
+![Alt Text](images/image2.png)
