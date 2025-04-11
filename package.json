@@ -4,7 +4,7 @@
   "type": "module", 
   "scripts": {
     "build": "tsc",
-    "start": "node --experimental-modules dist/index.js"
+    "start": "serve ."
   },
   "devDependencies": {
     "@types/node": "^22.14.0",

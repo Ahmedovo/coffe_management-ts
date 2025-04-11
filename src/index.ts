@@ -6,12 +6,13 @@ import { OrderDAO } from "./dao/OrderDAO.js";
 import { InventoryManager } from "./managers/InventoryManager.js";
 
 class CoffeeShopApp {
+    private db: IndexedDBDatabase;
     private orderDAO: OrderDAO;
     private inventoryManager: InventoryManager;
 
     constructor() {
-        const db = new IndexedDBDatabase();
-        this.orderDAO = new OrderDAO(db);
+        this.db = new IndexedDBDatabase();
+        this.orderDAO = new OrderDAO(this.db);
         this.inventoryManager = InventoryManager.getInstance();
     }
 
@@ -22,8 +23,7 @@ class CoffeeShopApp {
 
     private async initDatabase(): Promise<void> {
         try {
-            const db = new IndexedDBDatabase();
-            await db.init();
+            await this.db.init(); // ✅ Initialize the already existing instance
             console.log("Database initialized successfully");
         } catch (error) {
             console.error("Failed to initialize database:", error);
