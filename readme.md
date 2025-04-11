@@ -1,5 +1,7 @@
 # Coffee Shop Management System - Technical Implementation
 
+##Travail de Amachou Ahmed et Elkarmadi Yasmine 
+
 ## Overview
 Complete TypeScript implementation of a café management system with browser-based IndexedDB persistence following strict design patterns.
 ## Technical Specifications
